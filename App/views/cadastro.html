@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="author" content="Arthur Lenzi - arthurlenzi@gmail.com" />
+    <title>QUALI-TERM | Cadastro</title>
+    <link rel="shortcut icon" type="image/jpg" href="https://quali-a.com/wp-content/uploads/2018/09/cropped-favicon-32x32.jpg"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="{{ base_url()}}/css/cadastro.css">
+
+
+</head>
+  <body>
+    
+    <body>
+        <div class="base_url" value="{{ base_url()}}"></div>
+        <div class="wrapper fadeInDown">
+          <div id="formContent">
+            <div class="div-logo">
+              <img class="logo" src="{{ base_url()}}/images/image004.png">
+            </div>
+            <!-- Tabs Titles -->
+            <h2 class="inactive underlineHover" onclick="getLogin()">Entrar </h2>
+            <h2 class="active"> Cadastrar </h2>
+            
+        
+        
+            
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+               <h6 class="alert-text"></h6>
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close" onclick="hideAlert()">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <!-- Login Form -->
+            <form class="cadastro" target="{{ base_url()}}">
+              <input type="text" id="nome" class="fadeIn second" name="cadastro" placeholder="Nome completo" maxlength="40">
+              <input type="text" id="email" class="fadeIn second" name="cadastro" placeholder="Email" maxlength="40">
+              <input type="password" id="senha" class="fadeIn third" name="cadastro" placeholder="Senha" maxlength="16">
+              <input type="password" id="senha2" class="fadeIn third" name="cadastro" placeholder="Confirmar senha">
+              <input type="submit" class="fadeIn fourth" value="Cadastrar">
+            </form>
+        
+         
+        
+          </div>
+          
+      <script
+			  src="https://code.jquery.com/jquery-3.6.0.min.js"
+			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			  crossorigin="anonymous"></script>
+    
+    <script src="{{ base_url()}}/js/cadastro.js"></script> 
+  </body>

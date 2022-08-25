@@ -1,0 +1,36 @@
+{
+    "name": "djamp/djamp",
+    "description": "Site QualiA",
+    "type": "project",
+    "version": "2.0.0",
+    "authors": [
+        {
+            "name": "Arthur Lenzi",
+            "role": "developer",
+            "email": "arthurlenzi@gmail.com"
+        }
+    ],
+    "require": {
+        "slim/slim": "3.*",
+        "slim/twig-view": "2.5.1",
+        "slim/flash": "^0.4.0",
+        "twbs/bootstrap": "4.4.1",
+        "guzzlehttp/guzzle": "^7.0",
+        "opis/json-schema": "^1.0",
+        "firebase/php-jwt": "^5.2",
+        "phpmailer/phpmailer": "^6.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Controller\\": "App\\controllers",
+            "models\\": "App\\models",
+            "services\\": "App\\services",
+            "transformers\\": "App\\transformers",
+            "RestClients\\": "app\\restClients",
+            "lib\\": "lib",
+            "Engine\\": "engine",
+            "Djamp\\":""
+        }
+    },
+    "license": ""
+}

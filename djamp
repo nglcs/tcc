@@ -1,0 +1,46 @@
+<?php
+//tipo arquivo
+$operacao = $argv[1];
+//nome do arquivo
+
+if ($operacao == "create:Controller") {
+     $nomeArquivo = $argv[2];
+     $msg = '<?php' . PHP_EOL;
+     $msg .= '' . PHP_EOL;
+     $msg .= 'namespace Controller;' . PHP_EOL;
+     $msg.='' . PHP_EOL;
+     $msg .= 'class ' . $nomeArquivo . ' extends \Engine\Controller' . PHP_EOL;
+     $msg .= '{'. PHP_EOL;
+     $msg.='' . PHP_EOL;
+     $msg.='}'. PHP_EOL;
+     $msg.='';
+
+     file_put_contents('App/controllers/' . $nomeArquivo . '.php', $msg, FILE_APPEND);
+
+} elseif ($operacao == "create:Model") {
+     $nomeArquivo = $argv[2];
+     $msg = '<?php' . PHP_EOL;
+     $msg .= '' . PHP_EOL;
+     $msg .= 'namespace models;' . PHP_EOL;
+     $msg.='' . PHP_EOL;
+     $msg .= 'class ' . $nomeArquivo . ' extends \Engine\Model' . PHP_EOL;
+     $msg .= '{'. PHP_EOL;
+     $msg .='' . PHP_EOL;
+     $msg .='    public function __construct($state)' .PHP_EOL;
+     $msg .='    {' . PHP_EOL;
+     $msg .='        parent::__construct($state);' . PHP_EOL;
+     $msg.='' . PHP_EOL;
+     $msg.='        //aqui deve se iniciar a conexão com todos os bds que a model se conectará' . PHP_EOL;
+     $msg.='    }' . PHP_EOL;
+     $msg.='}'. PHP_EOL;
+     $msg.='';
+     file_put_contents('App/models/' . $nomeArquivo . '.php', $msg, FILE_APPEND);
+} else {
+     echo "comando não encontrado";
+}
+     echo "\nClasse " . $nomeArquivo . " criada com sucesso!\n";
+     echo "\nExecutando atualização do autoload\n\n";
+     exec('composer dump-autoload -o');
+     echo "\nprocesso concluido";
+
+?>

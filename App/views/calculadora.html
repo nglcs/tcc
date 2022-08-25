@@ -1,0 +1,556 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+      <title>Calculadora QUALI-TERM</title>
+      <link rel="shortcut icon" type="image/jpg" href="https://quali-a.com/wp-content/uploads/2018/09/cropped-favicon-32x32.jpg"/>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+      <link rel="stylesheet" href="{{ base_url()}}/css/calculadora.css">
+  </head>
+  
+  <body>
+<style>
+@page {margin-top: 0.2in; margin-bottom: 0.3; }
+body {margin-top: 0.2in; margin-bottom: 0.3; }
+</style>
+<table border="0" cellpadding="0" cellspacing="0" id="sheet0" class="sheet0">
+  <col class="col0">
+  <col class="col1">
+  <col class="col2">
+  <col class="col3">
+  <col class="col4">
+  <col class="col5">
+  <col class="col6">
+  <col class="col7">
+  <col class="col8">
+  <col class="col9">
+  <col class="col10">
+  <tbody>
+    <tr class="row0">
+      <td class="column0">&nbsp;</td>
+      <td class="column1">&nbsp;</td>
+      <td class="column2">&nbsp;</td>
+      <td class="column3">&nbsp;</td>
+      <td class="column4">&nbsp;</td>
+      <td class="column5">&nbsp;</td>
+      <td class="column6">&nbsp;</td>
+      <td class="column7">&nbsp;</td>
+      <td class="column8">&nbsp;</td>
+      <td class="column9">&nbsp;</td>
+      <td class="column10">&nbsp;</td>
+    </tr>
+    <tr class="row1">
+      <td class="column0 style2 null"></td>
+      <td class="column1 style1 null"></td>
+      <td class="column2">&nbsp;</td>
+      <td class="column3">&nbsp;</td>
+      <td class="column4">&nbsp;</td>
+      <td class="column5">&nbsp;</td>
+      <td class="column6">&nbsp;</td>
+      <td class="column7">&nbsp;</td>
+      <td class="column8">&nbsp;</td>
+      <td class="column9 style2 null"></td>
+      <td class="column10 style1 null"></td>
+    </tr>
+    <tr class="row2">
+      <td class="column0 style2 null"></td>
+      <td class="column1 style1 null"></td>
+      <td class="column2 style18 s style23" colspan="7" rowspan="2">CALCULADORAS <span style="color:#FFFFFF; font-family:'Nunito Light'; font-size:10pt">OBRIGATÓRIAS</span></td>
+      <td class="column9 style2 null"></td>
+      <td class="column10 style1 null"></td>
+    </tr>
+    <tr class="row3">
+      <td class="column0 style2 null"></td>
+      <td class="column1 style1 null"></td>
+      <td class="column9 style2 null"></td>
+      <td class="column10 style1 null"></td>
+    </tr>
+    <tr class="row4">
+      <td class="column0 style2 null"></td>
+      <td class="column1 style1 null"></td>
+      <td class="column2 style1 null"></td>
+      <td class="column3 style1 null"></td>
+      <td class="column4 style1 null"></td>
+      <td class="column5 style1 null"></td>
+      <td class="column6 style1 null"></td>
+      <td class="column7 style1 null"></td>
+      <td class="column8 style1 null"></td>
+      <td class="column9 style2 null"></td>
+      <td class="column10 style1 null"></td>
+    </tr>
+    <tr class="row5">
+      <td class="column0 style2 null"></td>
+      <td class="column1 style1 null"></td>
+      <td class="column2 style24 s style24" colspan="3">Para todas as Zonas Bioclimáticas</td>
+      <td class="column5 style1 null"></td>
+      <td class="column6 style24 s style24" colspan="3">Exclusivo para Zonas Bioclimáticas 7 e 8</td>
+      <td class="column9 style2 null"></td>
+      <td class="column10 style1 null"></td>
+    </tr>
+    <tr class="row6">
+      <td class="column0 style2 null"></td>
+      <td class="column1 style1 null"></td>
+      <td class="column2 style13 s style15" colspan="3">
+        DEGRADAÇÃO DA ABSORTÂNCIA
+        &nbsp;<i class="bi bi-info-circle" title="Obrigatório para todas as Absortâncias." data-toggle="tooltip" data-placement="right"></i>
+      </td>
+      <td class="column5 style1 null"></td>
+      <td class="column6 style13 s style15" colspan="3">FATOR DE CORREÇÃO DA TRANSMITÂNCIA</td>
+      <td class="column9 style2 null"></td>
+      <td class="column10 style1 null"></td>
+    </tr>
+    <tr class="row7">
+      <td class="column0 style2 null"></td>
+      <td class="column1 style1 null"></td>
+      <td class="column2 style11 s style11" colspan="2">
+        Absortância original
+        &nbsp;<i class="bi bi-info-circle" title="Inserir a Absortância original, obtida no Anexo Geral V da PORTARIA INMETRO N° 50/2013 ou
+        com o fabricante do material." data-toggle="tooltip" data-placement="right"></i>
+        &nbsp;
+      </td>
+      <td class="column4 style6 null">
+        <input type="text" class="form-control form-control-sm form-number pattern-float abs_original" maxlength="5" aria-describedby="inputGroup-sizing-sm">
+      </td>
+      <td class="column5 style1 null"></td>
+      <td class="column6 style11 s style11" colspan="2">
+        Altura da abertura em dois beirais opostos (cm)
+        &nbsp;<i class="bi bi-info-circle" title="Inserir a altura da abertura em dois beirais opostos da cobertura." data-toggle="tooltip" data-placement="right"></i>
+         &nbsp;
+        </td>
+      <td class="column8 style6 null">
+        <input type="text" class="form-control form-control-sm form-number abertura pattern-float" maxlength="5" aria-describedby="inputGroup-sizing-sm">
+</td>
+      <td class="column9 style2 null"></td>
+      <td class="column10 style1 null"></td>
+    </tr>
+    <tr class="row8">
+      <td class="column0 style2 null"></td>
+      <td class="column1 style1 null"></td>
+      <td class="column2 style12 s style12" colspan="2">Absortância com degradação&nbsp;</td>
+      <td class="column4 style10 resultado-0"></td>
+      <td class="column5 style1 null"></td>
+      <td class="column6 style12 s style12" colspan="2">FT &nbsp;</td>
+      <td class="column8 style10 resultado-1"></td>
+      <td class="column9 style2 null"></td>
+      <td class="column10 style1 null"></td>
+    </tr>
+    <tr class="row9">
+      <td class="column0 style2 null"></td>
+      <td class="column1 style1 null"></td>
+      <td class="column2 style1 null"></td>
+      <td class="column3 style1 null"></td>
+      <td class="column4 style1 null"></td>
+      <td class="column5 style1 null"></td>
+      <td class="column6 style1 null"></td>
+      <td class="column7 style1 null"></td>
+      <td class="column8 style1 null"></td>
+      <td class="column9 style2 null"></td>
+      <td class="column10 style1 null"></td>
+    </tr>
+    <tr class="row10">
+      <td class="column0 style2 null"></td>
+      <td class="column1 style1 null"></td>
+      <td class="column2 style1 null"></td>
+      <td class="column3 style1 null"></td>
+      <td class="column4 style1 null"></td>
+      <td class="column5 style1 null"></td>
+      <td class="column6 style1 null"></td>
+      <td class="column7 style1 null"></td>
+      <td class="column8 style1 null"></td>
+      <td class="column9 style2 null"></td>
+      <td class="column10 style1 null"></td>
+    </tr>
+    <tr class="row11">
+      <td class="column0 style2 null"></td>
+      <td class="column1 style1 null"></td>
+      <td class="column2 style18 s style23" colspan="7" rowspan="2">CALCULADORAS <span style="color:#FFFFFF; font-family:'Nunito Light'; font-size:10pt">DE PONDERAÇÃO</span></td>
+      <td class="column9 style2 null"></td>
+      <td class="column10 style1 null"></td>
+    </tr>
+    <tr class="row12">
+      <td class="column0 style2 null"></td>
+      <td class="column1 style1 null"></td>
+      <td class="column9 style2 null"></td>
+      <td class="column10 style1 null"></td>
+    </tr>
+    <tr class="row13">
+      <td class="column0 style2 null"></td>
+      <td class="column1 style1 null"></td>
+      <td class="column2 style1 null"></td>
+      <td class="column3 style1 null"></td>
+      <td class="column4 style1 null"></td>
+      <td class="column5 style1 null"></td>
+      <td class="column6 style1 null"></td>
+      <td class="column7 style1 null"></td>
+      <td class="column8 style1 null"></td>
+      <td class="column9 style2 null"></td>
+      <td class="column10 style1 null"></td>
+    </tr>
+    <tr class="row14">
+      <td class="column0 style2 null"></td>
+      <td class="column1 style1 null"></td>
+      <td class="column2 style13 s style15" colspan="3">
+        TRANSMITÂNCIA TÉRMICA
+        &nbsp;<i class="bi bi-info-circle" title="Utilizar a Calculadora para ponderar as
+        Transmitâncias Térmicas de Paredes e
+        Coberturas em um mesmo Ambiente de
+        Permanência Prolongada, somente quando
+        houver duas ou mais composições
+        diferentes na(s) Parede(s) ou Cobertura(s)
+        Externa(s)." data-toggle="tooltip" data-placement="right"></i>
+      </td>
+      <td class="column5 style1 null"></td>
+      <td class="column6 style13 s style15" colspan="3">
+        CAPACIDADE TÉRMICA
+        &nbsp;<i class="bi bi-info-circle" title="Utilizar a Calculadora para ponderar as Capacidades Térmica de Paredes em um mesmo Ambiente de Permanência Prolongada, somente quando houver duas composições diferentes na(s) Parede(s) Externa(s)." data-toggle="tooltip" data-placement="right"></i>
+      </td>
+      <td class="column9 style2 null"></td>
+      <td class="column10 style1 null"></td>
+    </tr>
+    <tr class="row15">
+      <td class="column0 style2 null"></td>
+      <td class="column1 style1 null"></td>
+      <td class="column2 style16 s style17" rowspan="2">Composição 01&nbsp;</td>
+      <td class="column3 style3 s">
+        Transmitância (W/(m².K))
+        &nbsp;<i class="bi bi-info-circle" title="Inserir
+        a Transmitância Térmica, da Composição
+        01, obtida no Site ProjeEEE." data-toggle="tooltip" data-placement="right"></i>
+        &nbsp;
+      </td>
+      <td class="column4 style6 null">
+        <input type="text" class="form-control form-control-sm form-number trans01 pattern-float" maxlength="5" aria-describedby="inputGroup-sizing-sm">
+</td>
+      <td class="column5 style1 null"></td>
+      <td class="column6 style16 s style17" rowspan="2">Composição 01&nbsp;</td>
+      <td class="column7 style3 s">
+        Capacidade (kJ/(m².K))
+        &nbsp;<i class="bi bi-info-circle" title="Inserir
+        a Capacidade Térmica, da Composição 01,
+        obtida no Site ProjeEEE." data-toggle="tooltip" data-placement="right"></i>
+         &nbsp;
+        </td>
+      <td class="column8 style6 null">
+        <input type="text" class="form-control form-control-sm form-number cap01 pattern-float" maxlength="5" aria-describedby="inputGroup-sizing-sm">
+</td>
+      <td class="column9 style2 null"></td>
+      <td class="column10 style1 null"></td>
+    </tr>
+    <tr class="row16">
+      <td class="column0 style2 null"></td>
+      <td class="column1 style1 null"></td>
+      <td class="column3 style4 s">Área (m²) 
+        &nbsp;<i class="bi bi-info-circle" title="Inserir
+        a Área correspondente à Composição 01.
+        Para Paredes, utilize a área da superfície.
+        Para Coberturas, utilize a área da projeção
+        horizontal." data-toggle="tooltip" data-placement="right"></i>
+        &nbsp;
+      </td>
+      <td class="column4 style7 null">
+        <input type="text" class="form-control form-control-sm form-number area-trans01 pattern-float" maxlength="5" aria-describedby="inputGroup-sizing-sm">
+</td>
+      <td class="column5 style1 null"></td>
+      <td class="column7 style4 s">
+        Área (m²) 
+        &nbsp;<i class="bi bi-info-circle" title="Inserir
+        a Área correspondente à Composição 01.
+        Utilize a área da superfície." data-toggle="tooltip" data-placement="right"></i>
+        &nbsp;
+      </td>
+      <td class="column8 style7 null">
+        <input type="text" class="form-control form-control-sm form-number area-cap01 pattern-float" maxlength="5" aria-describedby="inputGroup-sizing-sm">
+</td>
+      <td class="column9 style2 null"></td>
+      <td class="column10 style1 null"></td>
+    </tr>
+    <tr class="row17">
+      <td class="column0 style2 null"></td>
+      <td class="column1 style1 null"></td>
+      <td class="column2 style16 s style17" rowspan="2">Composição 02</td>
+      <td class="column3 style3 s">Transmitância (W/(m².K)) &nbsp;</td>
+      <td class="column4 style6 null">
+        <input type="text" class="form-control form-control-sm form-number trans02 pattern-float" maxlength="5" aria-describedby="inputGroup-sizing-sm">
+</td>
+      <td class="column5 style1 null"></td>
+      <td class="column6 style16 s style17" rowspan="2">Composição 02</td>
+      <td class="column7 style3 s">Capacidade (kJ/(m².K)) &nbsp;</td>
+      <td class="column8 style6 null">
+        <input type="text" class="form-control form-control-sm form-number cap02 pattern-float" maxlength="5" aria-describedby="inputGroup-sizing-sm">
+</td>
+      <td class="column9 style2 null"></td>
+      <td class="column10 style1 null"></td>
+    </tr>
+    <tr class="row18">
+      <td class="column0 style2 null"></td>
+      <td class="column1 style1 null"></td>
+      <td class="column3 style4 s">Área (m²) &nbsp;</td>
+      <td class="column4 style7 null">
+        <input type="text" class="form-control form-control-sm form-number area-trans02 pattern-float" maxlength="5" aria-describedby="inputGroup-sizing-sm">
+</td>
+      <td class="column5 style1 null"></td>
+      <td class="column7 style4 s">Área (m²) &nbsp;</td>
+      <td class="column8 style7 null">
+        <input type="text" class="form-control form-control-sm form-number area-cap02 pattern-float" maxlength="5" aria-describedby="inputGroup-sizing-sm">
+</td>
+      <td class="column9 style2 null"></td>
+      <td class="column10 style1 null"></td>
+    </tr>
+    <tr class="row19">
+      <td class="column0 style2 null"></td>
+      <td class="column1 style1 null"></td>
+      <td class="column2 style16 s style17 c3-trans" rowspan="2">Composição 03 <br><i class="bi bi-dash-circle dash-01 dash  on-off1"></i></td>
+      <td class="column2 style16 s style17 c3-trans-null" rowspan="2"><i class="bi bi-plus-circle plus-01 plus on-off1"></i></td>
+      <td class="column3 style3 s c3-trans">Transmitância (W/(m².K)) &nbsp;</td>
+      <td class="column3 style3 s c3-trans-null"></td>
+      <td class="column4 style6 null c3-trans">
+        <input type="text" class="form-control form-control-sm form-number trans03 pattern-float" maxlength="5" aria-describedby="inputGroup-sizing-sm">
+</td>
+      <td class="column4 style3 null c3-trans-null"></td>
+      <td class="column5 style1 null"></td>
+      <td class="column6 style16 s style17 c3-cap" rowspan="2">Composição 03 <br><i class="bi bi-dash-circle dash-02 dash  on-off2"></i></td>
+      <td class="column6 style16 s style17 c3-cap-null" rowspan="2"><i class="bi bi-plus-circle plus-02 plus on-off2"></i></td>
+      <td class="column7 style3 s c3-cap">Capacidade (kJ/(m².K)) &nbsp;</td>
+      <td class="column7 style3 s c3-cap-null"></td>
+      <td class="column8 style6 null c3-cap">
+        <input type="text" class="form-control form-control-sm form-number cap03 pattern-float" maxlength="5" aria-describedby="inputGroup-sizing-sm">
+</td>
+      <td class="column8 style3 null c3-cap-null"></td>
+      <td class="column9 style2 null"></td>
+      <td class="column10 style1 null"></td>
+    </tr>
+    <tr class="row20">
+      <td class="column0 style2 null"></td>
+      <td class="column1 style1 null"></td>
+      <td class="column3 style4 s c3-trans">Área (m²) &nbsp;</td>
+      <td class="column3 style4 s c3-trans-null"></td>
+      <td class="column4 style7 null c3-trans">
+        <input type="text" class="form-control form-control-sm form-number area-trans03 pattern-float" maxlength="5" aria-describedby="inputGroup-sizing-sm">
+      </td>
+      <td class="column4 style4 null c3-trans-null"></td>
+      <td class="column5 style1 null"></td>
+      <td class="column7 style4 s c3-cap">Área (m²) &nbsp;</td>
+      <td class="column7 style4 s c3-cap-null"></td>
+      <td class="column8 style7 null c3-cap">
+        <input type="text" class="form-control form-control-sm form-number area-cap03 pattern-float" maxlength="5" aria-describedby="inputGroup-sizing-sm">
+      </td>
+      <td class="column8 style4 null c3-cap-null"></td>
+      <td class="column9 style2 null"></td>
+      <td class="column10 style1 null"></td>
+    </tr>
+    <tr class="row21">
+      <td class="column0 style2 null"></td>
+      <td class="column1 style1 null"></td>
+      <td class="column2 style12 s style12" colspan="2">Trasmitância Equivalente &nbsp;</td>
+      <td class="column4 style9 f resultado-2"></td>
+      <td class="column5 style1 null"></td>
+      <td class="column6 style12 s style12" colspan="2">Capacidade Equivalente &nbsp;</td>
+      <td class="column8 style9 f resultado-3"></td>
+      <td class="column9 style2 null"></td>
+      <td class="column10 style1 null"></td>
+    </tr>
+    <tr class="row22">
+      <td class="column0 style2 null"></td>
+      <td class="column1 style1 null"></td>
+      <td class="column2 style1 null"></td>
+      <td class="column3 style5 null"></td>
+      <td class="column4 style5 null"></td>
+      <td class="column5 style1 null"></td>
+      <td class="column6 style1 null"></td>
+      <td class="column7 style1 null"></td>
+      <td class="column8 style1 null"></td>
+      <td class="column9 style2 null"></td>
+      <td class="column10 style1 null"></td>
+    </tr>
+    <tr class="row23">
+      <td class="column0 style2 null"></td>
+      <td class="column1 style1 null"></td>
+      <td class="column2 style13 s style15" colspan="3">
+        ABSORTÂNCIA
+        &nbsp;<i class="bi bi-info-circle" title="Utilizar a Calculadora para ponderar as
+        Absortâncias de Paredes e Coberturas em
+        um mesmo Ambiente de Permanência
+        Prolongada, somente quando houver duas
+        ou mais cores diferentes na(s) Parede(s) ou
+        Cobertura(s) Externa(s)." data-toggle="tooltip" data-placement="right"></i>
+      </td>
+      <td class="column5 style1 null"></td>
+      <td class="column6 style13 s style15" colspan="3">
+        FATOR SOLAR
+        &nbsp;<i class="bi bi-info-circle" title="Utilizar a Calculadora para ponderar o Fator Solar de Vidros em um mesmo Ambiente de Permanência Prolongada, somente quando houver Vidros com Fatores
+        Solares diferentes." data-toggle="tooltip" data-placement="right"></i>
+      </td>
+      <td class="column9 style2 null"></td>
+      <td class="column10 style1 null"></td>
+    </tr>
+    <tr class="row24">
+      <td class="column0 style2 null"></td>
+      <td class="column1 style1 null"></td>
+      <td class="column2 style16 s style17" rowspan="2">Absortância 01</td>
+      <td class="column3 style3 s">
+        Absortância
+        &nbsp;<i class="bi bi-info-circle" title="Inserir
+        a Absortância 01, obtida no Anexo Geral V
+        da PORTARIA INMETRO N° 50/2013 ou
+        com o fabricante do material." data-toggle="tooltip" data-placement="right"></i>
+        &nbsp;
+      </td>
+      <td class="column4 style6 null">
+        <input type="text" class="form-control form-control-sm form-number abs01 pattern-float" maxlength="5" aria-describedby="inputGroup-sizing-sm">
+</td>
+      <td class="column5 style1 null"></td>
+      <td class="column6 style16 s style17" rowspan="2">Vidro 01</td>
+      <td class="column7 style3 s">
+        Fator Solar 
+        &nbsp;<i class="bi bi-info-circle" title="Inserir
+        o Fator Solar do Vidro 01, obtido no Site
+        ProjetEEE ou com o fabricante do material." data-toggle="tooltip" data-placement="right"></i>
+        &nbsp;
+      </td>
+      <td class="column8 style6 null">
+        <input type="text" class="form-control form-control-sm form-number sol01 pattern-float" maxlength="5" aria-describedby="inputGroup-sizing-sm">
+</td>
+      <td class="column9 style2 null"></td>
+      <td class="column10 style1 null"></td>
+    </tr>
+    <tr class="row25">
+      <td class="column0 style2 null"></td>
+      <td class="column1 style1 null"></td>
+      <td class="column3 style4 s">
+        Área (m²) 
+        &nbsp;<i class="bi bi-info-circle" title="Inserir
+        a Área correspondente à Absortância 01.
+        Utilize a área da superfície tanto para
+        Paredes quanto para Coberturas." data-toggle="tooltip" data-placement="right"></i>
+        &nbsp;
+      </td>
+      <td class="column4 style7 null">
+        <input type="text" class="form-control form-control-sm form-number area-abs01 pattern-float" maxlength="5" aria-describedby="inputGroup-sizing-sm">
+</td>
+      <td class="column5 style1 null"></td>
+      <td class="column7 style8 s">
+        Área da superfície do elemento transparente (m²) 
+        &nbsp;<i class="bi bi-info-circle" title="Inserir
+        a Área correspondente Vidro 01. Utilize a
+        área da superfície. Considere apenas a área
+        de vidro, desconsiderando esquadrias e
+        montantes." data-toggle="tooltip" data-placement="right"></i>
+        &nbsp;
+      </td>
+      <td class="column8 style7 null">
+        <input type="text" class="form-control form-control-sm form-number area-sol01 pattern-float" maxlength="5" aria-describedby="inputGroup-sizing-sm">
+</td>
+      <td class="column9 style2 null"></td>
+      <td class="column10 style1 null"></td>
+    </tr>
+    <tr class="row26">
+      <td class="column0 style2 null"></td>
+      <td class="column1 style1 null"></td>
+      <td class="column2 style16 s style17" rowspan="2">Absortância 02</td>
+      <td class="column3 style3 s">Absortância &nbsp;</td>
+      <td class="column4 style6 null">
+        <input type="text" class="form-control form-control-sm form-number abs02 pattern-float" maxlength="5" aria-describedby="inputGroup-sizing-sm">
+</td>
+      <td class="column5 style1 null"></td>
+      <td class="column6 style16 s style17" rowspan="2">Vidro 02</td>
+      <td class="column7 style3 s">Fator Solar &nbsp;</td>
+      <td class="column8 style6 null">
+        <input type="text" class="form-control form-control-sm form-number sol02 pattern-float" maxlength="5" aria-describedby="inputGroup-sizing-sm">
+</td>
+      <td class="column9 style2 null"></td>
+      <td class="column10 style1 null"></td>
+    </tr>
+    <tr class="row27">
+      <td class="column0 style2 null"></td>
+      <td class="column1 style1 null"></td>
+      <td class="column3 style4 s">Área (m²)&nbsp;</td>
+      <td class="column4 style7 null">
+        <input type="text" class="form-control form-control-sm form-number area-abs02 pattern-float" maxlength="5" aria-describedby="inputGroup-sizing-sm">
+</td>
+      <td class="column5 style1 null"></td>
+      <td class="column7 style8 s">Área da superfície do elemento transparente (m²) &nbsp;</td>
+      <td class="column8 style7 null">
+        <input type="text" class="form-control form-control-sm form-number area-sol02 pattern-float" maxlength="5" aria-describedby="inputGroup-sizing-sm">
+</td>
+      <td class="column9 style2 null"></td>
+      <td class="column10 style1 null"></td>
+    </tr>
+    <tr class="row28">
+      <td class="column0 style2 null"></td>
+      <td class="column1 style1 null"></td>
+      <td class="column2 style16 s style17 c3-abs" rowspan="2">Absortância 03 <br><i class="bi bi-dash-circle dash-03 dash  on-off3"></i></td>
+      <td class="column2 style16 s style17 c3-abs-null" rowspan="2"><i class="bi bi-plus-circle plus-03 plus on-off3"></i></td>
+      <td class="column3 style3 s c3-abs">Absortância &nbsp;</td>
+      <td class="column3 style3 s c3-abs-null"></td>
+      <td class="column4 style6 null c3-abs">
+        <input type="text" class="form-control form-control-sm form-number abs03 pattern-float" maxlength="5" aria-describedby="inputGroup-sizing-sm"></td>
+      </td>
+      <td class="column4 style3 null c3-abs-null"></td>
+      <td class="column5 style1 null"></td>
+      <td class="column6 style16 s style17 c3-sol" rowspan="2">Vidro 03 <i class="bi bi-dash-circle dash-04 dash  on-off4"></i></td>
+      <td class="column6 style16 s style17 c3-sol-null" rowspan="2"><i class="bi bi-plus-circle plus-04 plus on-off4"></i></td>
+      <td class="column7 style3 s c3-sol">Fator Solar &nbsp;</td>
+      <td class="column7 style3 s c3-sol-null"></td>
+      <td class="column8 style6 null c3-sol">
+        <input type="text" class="form-control form-control-sm form-number sol03 pattern-float" maxlength="5" aria-describedby="inputGroup-sizing-sm">
+      </td>
+      <td class="column8 style3 null c3-sol-null"></td>
+      <td class="column9 style2 null"></td>
+      <td class="column10 style1 null"></td>
+    </tr>
+    <tr class="row29">
+      <td class="column0 style2 null"></td>
+      <td class="column1 style1 null"></td>
+      <td class="column3 style4 s c3-abs">Área (m²) &nbsp;</td>
+      <td class="column3 style4 s c3-abs-null"></td>
+      <td class="column4 style7 null c3-abs">
+        <input type="text" class="form-control form-control-sm form-number area-abs03 pattern-float" maxlength="5" aria-describedby="inputGroup-sizing-sm">
+      </td>
+      <td class="column4 style4 null c3-abs-null"></td>
+      <td class="column5 style1 null"></td>
+      <td class="column7 style8 s c3-sol">Área da superfície do elemento transparente (m²) &nbsp;</td>
+      <td class="column7 style8 s c3-sol-null"></td>
+      <td class="column8 style7 null c3-sol">
+        <input type="text" class="form-control form-control-sm form-number area-sol03 pattern-float" maxlength="5" aria-describedby="inputGroup-sizing-sm">
+      </td>
+      <td class="column8 style8 null c3-sol-null"></td>
+      <td class="column9 style2 null"></td>
+      <td class="column10 style1 null"></td>
+    </tr>
+    <tr class="row30">
+      <td class="column0 style2 null"></td>
+      <td class="column1 style1 null"></td>
+      <td class="column2 style12 s style12" colspan="2">Absortância Equivalente &nbsp;</td>
+      <td class="column4 style9 f resultado-4"></td>
+      <td class="column5 style1 null"></td>
+      <td class="column6 style12 s style12" colspan="2">Fator Solar Equivalente &nbsp;</td>
+      <td class="column8 style9 f resultado-5"></td>
+      <td class="column9 style2 null"></td>
+      <td class="column10 style1 null"></td>
+    </tr>
+    <tr class="row31">
+      <td class="column0">&nbsp;</td>
+      <td class="column1">&nbsp;</td>
+      <td class="column2 style1 null"></td>
+      <td class="column3 style5 null"></td>
+      <td class="column4 style5 null"></td>
+      <td class="column5 style1 null"></td>
+      <td class="column6 style1 null"></td>
+      <td class="column7 style1 null"></td>
+      <td class="column8 style1 null"></td>
+      <td class="column9">&nbsp;</td>
+      <td class="column10 style1 null"></td>
+    </tr>
+  </tbody>
+</table>
+    <script
+			  src="https://code.jquery.com/jquery-3.6.0.min.js"
+			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			  crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="{{ base_url()}}/js/calculadora.js"></script>
+  </body>
+</html>
